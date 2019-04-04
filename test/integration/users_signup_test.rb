@@ -17,7 +17,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
         # アクション実行の結果として描写されるHTMLの内容を検証
         assert_select 'div#error_explanation'
         assert_select 'div.alert'
-        assert_select 'form[action="/signup"]'
+        assert_select 'form[action="/users"]'
     end
     
     test "valid signup information" do
