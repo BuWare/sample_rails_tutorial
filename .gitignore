@@ -27,3 +27,6 @@
 
 # Ignore Spring files.
 /spring/*.pid
+
+/docker-compose.yml
+/Dockerfile
