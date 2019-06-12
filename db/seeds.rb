@@ -22,5 +22,12 @@ User.create!(name:"Example User",
 							password: password,
 							password_confirmation: password,
 						  activated: true,
-              activated_at: Time.zone.now)
+			  activated_at: Time.zone.now)
+end
+
+users = User.order(:created_at).take(6)
+50.times do
+	address = Gimei.address
+	content = address.hiragana
+	users.each { |user| user.microposts.create!(content: content) }
 end

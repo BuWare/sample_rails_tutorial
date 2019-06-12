@@ -11,8 +11,11 @@ gem 'jquery-rails',           '4.3.1'
 gem 'turbolinks',             '5.0.1'
 gem 'jbuilder',               '2.7.0'
 gem 'gimei',                  '0.3.0'
+gem 'carrierwave',            '1.2.2'
+gem 'mini_magick',            '4.7.0'
 gem 'will_paginate',          '3.1.6'
 gem 'bootstrap-will_paginate','1.0.0'
+gem 'fog', '1.42'
 
 gem 'hirb'
 gem 'hirb-unicode'  # 2byte文字で表示がずれるのを改善してくれる
@@ -39,9 +42,8 @@ group :test do
   gem 'guard-minitest',           '2.4.4'
 end
 
-# group :production do
-#   gem 'pg', '0.20.0'
-# end
+ group :production do
+ end
 
 # Windows環境ではtzinfo-dataというgemを含める必要があります
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
